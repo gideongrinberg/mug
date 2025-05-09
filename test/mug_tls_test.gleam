@@ -1,7 +1,6 @@
 import gleam/bit_array
 import gleam/bytes_tree.{from_string as bits}
 import gleam/erlang/process
-import gleam/option
 import gleam/string
 import gleeunit/should
 import mug

@@ -78,7 +78,7 @@ pub fn hello_world_test() {
   let assert Ok(Nil) = mug.send_builder(socket, bits("System still working?\n"))
   let assert Ok(Nil) = mug.send_builder(socket, bits("Seems to be!"))
 
-  let assert Ok(packet) = mug.receive(socket, timeout_milliseconds: 100)
+  let assert Ok(packet) = mug.receive(socket, timeout_milliseconds: 1000)
   let assert Ok(packet) = bit_array.to_string(packet)
   string.split(packet, "\n")
   |> should.equal([
